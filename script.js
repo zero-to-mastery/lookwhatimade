@@ -1,4 +1,4 @@
-fetch("./submissions.json")
+fetch("submissions.json")
   .then((response) => {
     if (!response.ok) {
       throw new Error(`HTTP error: ${response.status}`);
