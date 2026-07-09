@@ -1,5 +1,17 @@
 [
     {
+        "project_name": "Mushin Jujitsu Trainer",
+        "project_description": "Digital companion for the World JuJitsu Federation (WJJF) Ireland syllabus",
+        "project_url": "https://www.jujitsu.ie/",
+        "project_author": "Mark O'Dowd"
+    }, 
+    {
+        "project_name": "Irish Trad",
+        "project_description": "The all-in-one toolkit for learning and playing Irish traditional music",
+        "project_url": "https://www.irishtrad.ie/",
+        "project_author": "Mark O'Dowd"
+    },
+    {
         "project_name": "Project 1",
         "project_description": "This is my submission for Project 1.",
         "project_url": "https://example.com/project1",
@@ -14,20 +26,5 @@
         "project_name": "Project Beta",
         "project_description": "This is my submission for Project Beta.",
         "project_author": "John"
-    }, 
-    {
-        "project_name": "Mushin Jujitsu Trainer",
-        "project_description": "Digital companion for the World JuJitsu Federation (WJJF) Ireland syllabus",
-        "project_url": "https://www.jujitsu.ie/",
-        "project_author": "Mark O'Dowd"
-    }, 
-    {
-        "project_name": "Irish Trad",
-        "project_description": "The all-in-one toolkit for learning and playing Irish traditional music",
-        "project_url": "https://www.irishtrad.ie/",
-        "project_author": "Mark O'Dowd"
-    }, 
-    {
-        
     }
 ]

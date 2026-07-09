@@ -19,7 +19,9 @@ fetch("submissions.json")
       div.className = "submission-card";
       div.innerHTML = `
         <h3>${item.project_name}</h3>
+        <div class="card-height">
         <p><strong>Description:</strong> ${truncateText(item.project_description)}</p>
+        </div>
         <p><strong>Author:</strong> ${item.project_author}</p>
         <a href="${item.project_url}" target="_blank">View Project</a>
       `;

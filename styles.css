@@ -16,6 +16,12 @@ body {
   color: var(--color-black);
   background-color: var(--color-white);
   margin: 0;
+  max-width: 1750px;
+  margin: 0 60px;
+
+  @media only screen and (max-width: 768px) {
+    margin: 0 20px;
+  }
 }
 
 .header {
@@ -28,6 +34,12 @@ body {
   color: var(--color-black);
 }
 
+.site-description {
+    text-align: center;
+    color: var(--color-dark-grey);
+    font-weight: 600;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -38,6 +50,7 @@ body {
 
 .submission-card {
   width: 300px;
+  min-width: 300px;
   border: 1px solid var(--color-mid-grey);
   border-radius: 12px;
   overflow: hidden;
@@ -45,6 +58,19 @@ body {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   padding: 24px;
   background-color: var(--color-white);
+
+  @media only screen and (max-width: 400px) {
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+.card-height {
+    height: 90px;
+
+    @media only screen and (max-width: 400px) {
+        height: auto;
+    }
 }
 
 .submission-card:hover {
@@ -92,4 +118,13 @@ body {
 
 .submission-card a:hover {
   background-color: var(--color-button-pink-hover);
+}
+
+footer {
+    text-align: center;
+    padding: 80px 0 60px;
+
+    @media only screen and (max-width: 768px) {
+        padding: 40px 20px;
+    }
 }
