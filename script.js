@@ -1,3 +1,10 @@
+function truncateText(text, maxLength = 140) {
+  if (text.length <= maxLength) {
+    return text;
+  }
+  return text.slice(0, maxLength).trim() + "…";
+}
+
 fetch("submissions.json")
   .then((response) => {
     if (!response.ok) {
@@ -12,7 +19,7 @@ fetch("submissions.json")
       div.className = "submission-card";
       div.innerHTML = `
         <h3>${item.project_name}</h3>
-        <p><strong>Description:</strong> ${item.project_description}</p>
+        <p><strong>Description:</strong> ${truncateText(item.project_description)}</p>
         <p><strong>Author:</strong> ${item.project_author}</p>
         <a href="${item.project_url}" target="_blank">View Project</a>
       `;

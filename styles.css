@@ -1,21 +1,95 @@
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
+/* ZTM theme values pulled from theme.js */
+:root {
+  --color-black: #000000;
+  --color-dark-grey: #373F49;
+  --color-grey: #636363;
+  --color-mid-grey: #D9D9D9;
+  --color-light-grey: #F6F6FB;
+  --color-white: #FFFFFF;
+  --color-accent-pink: #F51767;
+  --color-hyperlink-pink: #E60A5A;
+  --color-button-pink-hover: #C4084C;
 }
+
+body {
+  font-family: "Barlow", sans-serif;
+  color: var(--color-black);
+  background-color: var(--color-white);
+  margin: 0;
+}
+
 .header {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin: 40px 0 30px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 65px;
+  color: var(--color-black);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
 
 .submission-card {
-    width: 300px;
-    border: 1px solid #000000;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
-    padding: 20px;
+  width: 300px;
+  border: 1px solid var(--color-mid-grey);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 24px;
+  background-color: var(--color-white);
+}
+
+.submission-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.submission-card h2,
+.submission-card h3 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
+  color: var(--color-black);
+  margin: 0 0 12px;
+}
+
+.submission-card p {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-dark-grey);
+  margin: 0 0 8px;
+}
+
+.submission-card p strong {
+  color: var(--color-black);
+  font-weight: 600;
+}
+
+.submission-card a {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 22px;
+  border-radius: 999px;
+  background-color: var(--color-hyperlink-pink);
+  color: var(--color-white);
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.submission-card a:hover {
+  background-color: var(--color-button-pink-hover);
 }
