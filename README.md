@@ -42,25 +42,6 @@ Open `submissions.json` and add a new entry to the array:
 5. Commit your change and open a pull request — or push directly if you have access.
 6. Once merged and deployed, your project card will appear on the site automatically.
 
-### Example
-
-​```json
-[
-  {
-    "project_name": "Mushin Jujitsu Trainer",
-    "project_description": "Digital companion for the World JuJitsu Federation (WJJF) Ireland syllabus",
-    "project_author": "Mark O'Dowd",
-    "project_url": "https://example.com/mushin-jujitsu"
-  },
-  {
-    "project_name": "Your Project Name",
-    "project_description": "A short description of what your project does.",
-    "project_author": "Your Name",
-    "project_url": "https://link-to-your-project.com"
-  }
-]
-​```
-
 ## Previewing your changes before you commit
 
 Since this site loads `submissions.json` with `fetch()`, opening `index.html` directly by double-clicking it won't work — browsers block local file fetches for security reasons. Use the **Live Server** extension in VS Code instead:
