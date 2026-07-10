@@ -1,4 +1,4 @@
-function truncateText(text, maxLength = 140) {
+function truncateText(text, maxLength = 105) {
   if (text.length <= maxLength) {
     return text;
   }
