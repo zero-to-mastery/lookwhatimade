@@ -24,6 +24,12 @@
         "project_author": "Laura White"
     },
     {
+        "project_name": "Virtualized Development Environment System",
+        "project_description": "VDE (Virtualized Development Environment) System is a modular, extensible, template-based Docker development environment written in ZSH supporting 22+ programming languages and 8+ services.",
+        "project_url": "https://github.com/dderyldowney/vde-system",
+        "project_author": "D Deryl Downey"
+    },
+    {
         "project_name": "Project Beta",
         "project_description": "This is my submission for Project Beta.",
         "project_author": "John"
