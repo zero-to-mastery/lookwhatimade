@@ -39,5 +39,11 @@
         "project_description": "A digital passport for tracking progress in the ZeroToMastery program.",
         "project_url": "https://passport.zerotomastery.io/",
         "project_author": "Matt Smith"
+    },
+    {
+        "project_name": "Personal Finance App",
+        "project_description": "All-in-one personal finance app for a single household.",
+        "project_url": "https://demo.edgarchavez.dev/",
+        "project_author": "Edgar Chavez"
     }
 ]
